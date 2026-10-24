@@ -2,7 +2,7 @@
 
 Loja virtual de cupcakes desenvolvida como Projeto Integrador Transdisciplinar em Engenharia de Software II (Cruzeiro do Sul Virtual).
 
-🔗 **Acesse o sistema:** [https://loja-cupcakes.onrender.com/]
+🔗 **Acesse o sistema:** https://loja-cupcakes.onrender.com/
 
 > O servidor está no plano gratuito do Render: o primeiro acesso após um período sem uso pode levar cerca de 1 minuto.
 
@@ -103,4 +103,4 @@ São 23 testes automatizados cobrindo catálogo, cadastro, login, sessão, pedid
 
 ## Autor
 
-[João Cardoso Mendes Pasquali] – RGM [34790071]
+João Cardoso Mendes Pasquali – RGM 34790077
