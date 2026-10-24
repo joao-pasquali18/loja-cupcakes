@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Doce Cupcake</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a href="/" class="logo">🧁 Doce Cupcake</a>
+    <nav>
+      <a href="/carrinho.html" class="link-carrinho">
+        Carrinho (<span id="contador-carrinho">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Seu carrinho</h1>
+
+    <div id="carrinho-vazio" class="vazio" hidden>
+      <p>Seu carrinho está vazio.</p>
+      <a href="/" class="botao botao-link">Ver cupcakes</a>
+    </div>
+
+    <div id="carrinho-conteudo" hidden>
+      <ul id="lista-itens" class="lista-itens"></ul>
+      <div class="resumo">
+        <p>Total: <strong id="total-carrinho">R$ 0,00</strong></p>
+        <a href="/checkout.html" class="botao botao-link">Finalizar pedido</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/carrinho.js"></script>
+  <script src="js/carrinho-pagina.js"></script>
+</body>
+</html>
