@@ -59,3 +59,16 @@ function removerDoCarrinho(id) {
 function calcularTotal(itens) {
   return itens.reduce((soma, item) => soma + item.preco * item.quantidade, 0);
 }
+
+// Permite que os testes automatizados usem estas funções
+if (typeof module !== 'undefined') {
+  module.exports = {
+    lerCarrinho,
+    salvarCarrinho,
+    adicionarAoCarrinho,
+    alterarQuantidade,
+    removerDoCarrinho,
+    calcularTotal,
+    formatarPreco,
+  };
+}
