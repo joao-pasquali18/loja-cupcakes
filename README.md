@@ -103,4 +103,4 @@ São 23 testes automatizados cobrindo catálogo, cadastro, login, sessão, pedid
 
 ## Autor
 
-João Cardoso Mendes Pasquali – RGM 34790077
+João Cardoso Mendes Pasquali – RGM 34790071
