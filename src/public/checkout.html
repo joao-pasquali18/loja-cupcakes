@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar pedido - Doce Cupcake</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a href="/" class="logo">🧁 Doce Cupcake</a>
+    <nav>
+      <a href="/carrinho.html" class="link-carrinho">
+        Carrinho (<span id="contador-carrinho">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Finalizar pedido</h1>
+
+    <div id="checkout-vazio" class="vazio" hidden>
+      <p>Seu carrinho está vazio.</p>
+      <a href="/" class="botao botao-link">Ver cupcakes</a>
+    </div>
+
+    <div id="checkout-conteudo" class="checkout" hidden>
+      <form id="form-checkout" class="formulario-card checkout-form" novalidate>
+        <h2>Dados de entrega</h2>
+        <div class="campo">
+          <label for="rua">Rua e número</label>
+          <input id="rua" type="text" autocomplete="street-address" required>
+        </div>
+        <div class="campo">
+          <label for="complemento">Complemento (opcional)</label>
+          <input id="complemento" type="text">
+        </div>
+        <div class="campo">
+          <label for="bairro">Bairro</label>
+          <input id="bairro" type="text" required>
+        </div>
+        <div class="campo">
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="text" autocomplete="address-level2" required>
+        </div>
+
+        <h2>Forma de pagamento</h2>
+        <div class="opcoes-pagamento">
+          <label class="opcao"><input type="radio" name="pagamento" value="pix"> Pix</label>
+          <label class="opcao"><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+          <label class="opcao"><input type="radio" name="pagamento" value="dinheiro"> Dinheiro na entrega</label>
+        </div>
+        <p class="aviso">Pagamento simulado: nenhuma cobrança real será feita.</p>
+
+        <p id="mensagem" class="mensagem"></p>
+        <button type="submit" class="botao">Confirmar pedido</button>
+      </form>
+
+      <aside class="resumo-pedido">
+        <h2>Resumo</h2>
+        <ul id="resumo-itens"></ul>
+        <p class="resumo-total">Total <strong id="resumo-total"></strong></p>
+      </aside>
+    </div>
+
+    <div id="confirmacao" class="vazio" hidden>
+      <h2>🎉 Pedido realizado!</h2>
+      <p id="confirmacao-texto"></p>
+      <a href="/pedidos.html" class="botao botao-link">Ver meus pedidos</a>
+    </div>
+  </main>
+
+  <script src="js/sessao.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
